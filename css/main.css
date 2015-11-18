@@ -1,0 +1,10 @@
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 100px;
+  text-shadow: 1px 1px 3px #DDD;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  float: right;
+}
