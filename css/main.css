@@ -37,6 +37,7 @@
 
 /* STYLING */
 body {
+  font-family: 'montserrathairline', sans-serif;
   text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3);
   padding: 0;
   margin: 0;
@@ -57,11 +58,11 @@ body:hover {
   color: white;
 }
 
-body i {
+body a {
   color: black;
 }
 
-body:hover i {
+body:hover a {
   color: white;
 }
 
@@ -71,10 +72,13 @@ h1 {
 }
 
 h2 {
-  font-family: 'montserrathairline', sans-serif;
   letter-spacing: -1px;
   float: right;
   margin-right: 20px;
+}
+
+p {
+  margin: 20px 50px;
 }
 
 ul {
