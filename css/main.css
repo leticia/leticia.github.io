@@ -38,7 +38,6 @@
 /* STYLING */
 body {
   font-family: 'montserrathairline', sans-serif;
-  text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3);
   padding: 0;
   margin: 0;
   width: 100%;
@@ -78,7 +77,7 @@ h2 {
 }
 
 p {
-  margin: 20px 50px;
+  margin: 0 90px;
 }
 
 ul {
@@ -89,7 +88,12 @@ li {
   display: inline;
 }
 
-#lost, #about {
+a {
+  text-decoration: none;
+}
+
+.about {
+  font-size: 126%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -99,9 +103,12 @@ li {
 #question-mark {
   font-family: "bebas_neuebold", "sans-serif";
   font-size: 200%;
-  text-decoration: none;
   padding: 20px;
   float: right;
+}
+
+#email {
+  text-decoration: underline;
 }
 
 /* ICONS */
@@ -109,6 +116,7 @@ li {
   font-family: "social";
   font-style: normal;
   font-weight: normal;
+  text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3);
   speak: none;
   display: inline-block;
   text-decoration: inherit;
