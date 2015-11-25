@@ -89,6 +89,14 @@ li {
   display: inline;
 }
 
+#about {
+  font-family: "bebas_neuebold", "sans-serif";
+  font-size: 200%;
+  text-decoration: none;
+  padding: 20px;
+  float: right;
+}
+
 #lost {
   height: 100%;
   display: flex;
