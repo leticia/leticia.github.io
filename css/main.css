@@ -1,70 +1,13 @@
-/* FONTS */
-
-@font-face {
-    font-family: 'bebas_neuebold';
-    src: url('../fonts/bebasneue-bold.eot');
-    src: url('../fonts/bebasneue-bold.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/bebasneue-bold.woff2') format('woff2'),
-         url('../fonts/bebasneue-bold.woff') format('woff'),
-         url('../fonts/bebasneue-bold.ttf') format('truetype'),
-         url('../fonts/bebasneue-bold.svg#bebas_neuebold') format('svg');
-    font-weight: normal;
-    font-style: normal;
+html, body {
+  height: 100%;
 }
-
-@font-face {
-    font-family: 'montserrathairline';
-    src: url('../fonts/montserrat-hairline.eot');
-    src: url('../fonts/montserrat-hairline.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/montserrat-hairline.woff2') format('woff2'),
-         url('../fonts/montserrat-hairline.woff') format('woff'),
-         url('../fonts/montserrat-hairline.ttf') format('truetype'),
-         url('../fonts/montserrat-hairline.svg#montserrathairline') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-  font-family: 'social';
-  src: url('../fonts/social.eot?67466410');
-  src: url('../fonts/social.eot?67466410#iefix') format('embedded-opentype'),
-       url('../fonts/social.woff?67466410') format('woff'),
-       url('../fonts/social.ttf?67466410') format('truetype'),
-       url('../fonts/social.svg?67466410#social') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-/* STYLING */
 
 body {
-  font-family: 'montserrathairline', sans-serif;
-  display: flex;
-  flex-flow: column wrap;
-
-  -webkit-transition: background-color 250ms linear 250ms, color 250ms linear 250ms;
-  -moz-transition: background-color 250ms linear 250ms, color 250ms linear 250ms;
-  -o-transition: background-color 250ms linear 250ms, color 250ms linear 250ms;
-  transition: background-color 250ms linear 250ms, color 250ms linear 250ms;
-}
-
-body:hover {
-  background-color: black;
-  color: white;
-}
-
-body a {
-  color: black;
-}
-
-body:hover a {
-  color: white;
+  font-family: "Inconsolata", sans-serif;
 }
 
 h1 {
-  font-family: "bebas_neuebold", "sans-serif";
-  font-size: 12em;
+  font-family: "Inconsolata", "sans-serif";
 }
 
 h2 {
@@ -76,8 +19,8 @@ ul {
 }
 
 li {
-  display: inline;
-}
+    display: inline;
+  }
 
 a {
   text-decoration: none;
@@ -87,51 +30,33 @@ p {
   font-size: 1.2em;
 }
 
-.align-end, p {
-  align-self: flex-end;
+p, h2 {
   margin-right: 20px;
 }
 
-.question-mark {
-  font-family: "bebas_neuebold", "sans-serif";
-  font-size: 2.5em;
+main a {
+  color: black;
+  display: block;
+  line-height: 1.2em;
 }
 
-.outer {
-  position: absolute;
-  height: 100%;
-  width: 100%;
+main a {
+  color: black;
+  display: block;
+  text-decoration: underline;
+}
+
+
+.flex {
   display: flex;
+}
+
+.flex-center {
   align-items: center;
   justify-content: center;
 }
 
-/* ICONS */
-[class^="icon-"]:before {
-  font-family: "social";
-  font-style: normal;
-  font-weight: normal;
-  text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3);
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: .2em;
-  text-align: center;
-
-  /* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
-
-  /* you can be more comfortable with increased icons size */
-  font-size: 200%;
-
-  /* Font smoothing. That was taken from TWBS */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.outer {
+  height: 100%;
+  width: 100%;
 }
-
-.icon-github:before { content: '\e800'; }
-.icon-twitter-bird:before { content: '\e801'; }
-.icon-lastfm-rect:before { content: '\e802'; }
-.icon-tumblr:before { content: '\e803'; }
