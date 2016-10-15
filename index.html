@@ -22,7 +22,7 @@
         <li><a href="http://github.lele.rocks" target="_blank">code</a></li>
         <li><a href="http://twitter.lele.rocks" target="_blank">echo</a></li>
         <li><a href="http://thoughts.lele.rocks" target="_blank">misc</a></li>
-        <li><a href="http://fightanalytics.cc" target="_blank" onclick="handleOutboundLinkClicks(e);">fight</a></li>
+        <li><a href="http://fightanalytics.cc" target="_blank" onclick="handleOutboundLinkClicks('http://fightanalytics.cc');">fight</a></li>
       </ul>
     </main>
 
@@ -36,11 +36,11 @@
       ga('send', 'pageview');
 
       /* Tracks a click on an outbound link in Analytics  */
-      function handleOutboundLinkClicks(event) {
+      function handleOutboundLinkClicks(url) {
         ga('send', 'event', {
           eventCategory: 'Outbound Link',
           eventAction: 'click',
-          eventLabel: event.target.href,
+          eventLabel: url,
           transport: 'beacon'
         });
       }
