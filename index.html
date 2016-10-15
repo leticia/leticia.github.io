@@ -36,14 +36,9 @@
       ga('send', 'pageview');
 
       /* Tracks a click on an outbound link in Analytics  */
-      function handleOutboundLinkClicks(url) {
-        ga('send', 'event', {
-          eventCategory: 'Outbound Link',
-          eventAction: 'click',
-          eventLabel: url,
-          transport: 'beacon'
-        });
-      }
+      (function handleOutboundLinkClicks(url) {
+        ga('send', 'event', 'Outbound Link', 'click', url, { transport: 'beacon' } });
+      });
     </script>
   </body>
 </html>
