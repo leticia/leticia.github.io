@@ -21,7 +21,6 @@
         <li><a href="http://lastfm.com/user/leticiando" target="_blank">music</a></li>
         <li><a href="http://github.lele.rocks" target="_blank">code</a></li>
         <li><a href="http://twitter.lele.rocks" target="_blank">echo</a></li>
-        <li><a href="http://go.lele.rocks/2euJvZQ" target="_blank" onclick="handleOutboundLinkClicks('http://fightanalytics.cc');">fight</a></li>
       </ul>
     </main>
 
@@ -33,11 +32,6 @@
 
       ga('create', 'UA-70688404-1', 'auto');
       ga('send', 'pageview');
-
-      /* Tracks a click on an outbound link in Analytics  */
-      function handleOutboundLinkClicks(url) {
-        ga('send', 'event', 'Outbound Link', 'click', url, { transport: 'beacon' } );
-      };
     </script>
   </body>
 </html>
